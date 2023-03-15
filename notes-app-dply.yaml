@@ -15,6 +15,7 @@ spec:
   template:
     metadata:
       annotations:
+        # https://docs.datadoghq.com/tracing/trace_collection/library_injection/?tab=kubernetes#container-registries
         admission.datadoghq.com/python-lib.version: "v1.9.0"
         ad.datadoghq.com/notes-app.logs: '[{"source": "python"}]'
       labels:

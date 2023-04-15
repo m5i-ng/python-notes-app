@@ -4,7 +4,7 @@
 # This product includes software developed at Datadog (https://www.datadoghq.com/)
 # Copyright 2022 Datadog, Inc.
 
-FROM registry.access.redhat.com/ubi8/python-38
+FROM registry.access.redhat.com/ubi8/python-39
 # FROM python:3
 
 WORKDIR /home

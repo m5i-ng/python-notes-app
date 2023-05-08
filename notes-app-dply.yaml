@@ -5,7 +5,7 @@ metadata:
     app: notes-app
     tags.datadoghq.com/env: "dev"
     tags.datadoghq.com/service: "notes-app"
-    tags.datadoghq.com/version: "0.3"
+    tags.datadoghq.com/version: "0.4"
   name: notes-app
 spec:
   replicas: 1
@@ -22,12 +22,12 @@ spec:
         admission.datadoghq.com/enabled: "true"
         tags.datadoghq.com/env: "dev"
         tags.datadoghq.com/service: "notes-app"
-        tags.datadoghq.com/version: "0.3"
+        tags.datadoghq.com/version: "0.4"
         app: notes-app
     spec:
       containers:
       - name: notes-app
-        image: min499/notes:0.3
+        image: min499/notes:0.4
         imagePullPolicy: Always
         command: ["/bin/bash"]
         args: ["-c", "python -m notes_app.app & /home/notes_app/generate-traffic.sh"]
